@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Header from './Header/Header';
+import Home from './Home/Home';
+import Shoes from './Directory/Shoes';
+import Routes from './Routes/Routes';
+import Team from './Team/Team';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          TEST
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+
+  <BrowserRouter>
+    <Header />
+    <Route exact path="/" component={Home} />
+    <Route path="/Shoes" component={Shoes} />
+    <Route path="/Routes" component={Routes} />
+    <Route path="/Team" component={Team} />
+  </BrowserRouter>
+);
 
 export default App;

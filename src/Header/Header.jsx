@@ -5,39 +5,33 @@ import './Header.css';
 
 const Header = () => (
 
-  <nav className="navbar">
-      <NavLink
+  <header>
+    <div />
+    <ul className="nav__links">
+      <li>
+        <NavLink
           exact
-          activeClassName="navbar__link--active"
-          className="navbar__link"
           to="/"
-      >
+        >
           Home
-      </NavLink>
-         <NavLink
-          activeClassName="navbar__link-active"
-          className="navbar__link"
-          to="/Shoes"
-      >
-          Shoes
-      </NavLink>
-      <NavLink
-          cactiveClassName="navbar__link-active"
-          className="navbar__link"
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="Routes"
-      >
+        >
           Routes
-      </NavLink>
-      <NavLink
-          activeClassName="navbar__link-active"
-          className="navbar__link"
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/team"
-      >
+        >
           Team
-      </NavLink>
-
-  </nav>
+        </NavLink>
+      </li>
+    </ul>
+  </header>
 );
-
 
 export default Header;

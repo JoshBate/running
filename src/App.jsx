@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from './Header/Header';
 import Home from './Home/Home';
-import Shoes from './Directory/Shoes';
+import Shoes from './Shoes/Shoes';
 import Routes from './Routes/Routes';
 import Team from './Team/Team';
 import './App.css';

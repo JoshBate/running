@@ -2,11 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './Header.css';
+import Logo from '../images/logo.png';
 
 const Header = () => (
 
   <header>
-    <div />
+    <img className="navbar__title navbar__item" src={Logo} alt="the logo"></img>
     <ul className="nav__links">
       <li>
         <NavLink
@@ -14,6 +15,13 @@ const Header = () => (
           to="/"
         >
           Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/Shoes"
+          >
+          Shoes
         </NavLink>
       </li>
       <li>
@@ -31,6 +39,7 @@ const Header = () => (
         </NavLink>
       </li>
     </ul>
+
   </header>
 );
 
